@@ -1,0 +1,1 @@
+activate :file_history
