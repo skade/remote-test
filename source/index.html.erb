@@ -1,3 +1,10 @@
 <h1>test some more</h1>
 
-<%= current_page.initial_author.name %>
+Initial author: <%= current_page.original_author.name %>
+
+Github profile: <%= current_page.original_author.profile.html_url %>
+Github profile: <%= current_page.original_author.profile.html_url %>
+
+Authors: <%= current_page.authors.map(&:name).join(", ")%>
+
+Contributors: <%= current_page.contributors.map(&:name).join(", ")%>
